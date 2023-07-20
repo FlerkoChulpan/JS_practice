@@ -56,8 +56,8 @@ function printResult(result){
 }
 
 function computeNumbersWithAction(input1, input2,actionSymbol){
-    const num1=Number(inp1.value);
-    const num2=Number(inp2.value);
+    const num1=Number(input1.value);
+    const num2=Number(input2.value);
     // if (actionSymbol=='+'){
     //     return num1+num2;
     // } else if (actionSymbol=='-'){
