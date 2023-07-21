@@ -4,9 +4,9 @@
 // Выведите все три переменные с помощью console.log().
 // После вывода присвойте переменным a, b и с новые значения, затем выведите их в консоль и посмотрите, что получилось. В случае возникновения ошибок удалить “проблемное” выражение.
 
-var a1=5;
-let b1=10;
-const c1=13;
+var a=5;
+let b=10;
+const c=13;
 
 console.log (a, b, c)
 
@@ -54,42 +54,42 @@ console.log(`Вы купили ${productName} (${productQuantity} шт.) по ${
 
 // Выведите в консоль следующие выражения:
 
-// typeof 'Hello'
-// typeof 10
-// typeof {}
-// typeof null
-// typeof undefined
-// typeof true
-// typeof []
-// typeof (() => {})
+console.log (typeof 'Hello') //string
+console.log (typeof 10) //number
+console.log (typeof {}) //object
+console.log (typeof null) //object
+console.log (typeof undefined) //underfined
+console.log (typeof true) //boolean
+console.log (typeof []) //object
+console.log (typeof (() => {})) //function
 // Проанализируйте результат выполнения программы и определите для себя, почему произошел тот или иной вывод. 
 
 // Задание #5
 
 // Выведите в консоль следующие выражения:
 
-// 10 == 10
-// 10 != 10
-// 12 == 'Привет'
-// 10 < 11
-// 12 > 20
-// true && true
-// true && false
-// false && true
-// false || true
-// true || false
-// true || true
-// 10 <= 10
-// 18 <= 20
-// 50 >= 50
-// 51 >= 50
-// {} === {}
-// {} == {}
+console.log (10 == 10); //true == проверяет равенство
+console.log (10 != 10); //false != проверяет неравенство
+console.log (12 == 'Привет'); //false
+console.log (10 < 11); //true
+console.log (12 > 20); //false
+console.log (true && true); //true
+console.log (true && false); //false один из операндов фолс && - И, обязательно долдны быть 2 условия
+console.log (false && true); //false
+console.log (false || true); //true || - или, если один из операндов подходит, значит все ок
+console.log (true || false); //true
+console.log (true || true); //true
+console.log (10 <= 10); //true
+console.log (18 <= 20); //true
+console.log (50 >= 50); //true
+console.log (51 >= 50); //true
+console.log ({} === {}); //false происходит сравнение сравнение ссылок на объекты, а не их содержимого
+console.log ({} == {}); //false
 // Сравнение по ссылке:
 
-// const a = {};
-// const b = a;
-// console.log(a === b);
+const a = {};
+const b = a;
+console.log(a === b); //true
 // Проанализируйте результат выполнения программы и определите для себя, почему произошел тот или иной вывод. 
 
 // Задание #6
@@ -97,3 +97,7 @@ console.log(`Вы купили ${productName} (${productQuantity} шт.) по ${
 // Создайте переменную a и b, присвойте им любые числа. Если a больше b, выведите в консоль true, иначе — false. 
 
 // Примечание. Нельзя использовать if...else и тернарный оператор. 
+
+let a = 15;
+let b = 12;
+console.log (Boolean (a>b));
